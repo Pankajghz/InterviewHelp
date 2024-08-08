@@ -1,9 +1,14 @@
-import Home from "./Pages/Home";
-
+import Footer from "./components/Footer/Footer";
+import Nav from "./components/Navbar/Nav.jsx";
+import { Outlet } from "react-router-dom";
+import Gotop from "./components/goToTopButton/Gotop";
 const App = () => {
   return (
     <>
-      <Home />
+      <Nav />
+      <Outlet />
+      <Gotop />
+      <Footer />
     </>
   );
 };
